@@ -1,50 +1,137 @@
-# React + TypeScript + Vite
+# React Boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive and modern React boilerplate designed to help you kickstart your projects quickly and efficiently. This boilerplate includes a robust set of tools and configurations to streamline your development workflow, ensuring you can focus on building your application without worrying about the setup.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Scripts](#scripts)
+- [License](#license)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React 19
+- TypeScript
+- Vite for fast builds
+- Tailwind CSS for styling
+- React Router for routing
+- React Helmet for managing document head
+- ESLint for linting
+- Rollup for bundling
+- Lenis for smooth scrolling
+- Framer Motion for animations
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js (>= 14.x)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/yourusername/react-boilerplate.git
+cd react-boilerplate
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm install
+# or
+yarn install
 ```
+
+3. Start the development server:
+
+```sh
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser and navigate to [http://localhost:5173](http://localhost:5173)
+
+## Project Structure
+
+```
+.
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── package.json
+├── public/
+│   ├── vite.svg
+│   ├── robots.txt
+├── README.md
+├── rollup.config.js
+├── src/
+│   ├── animation/
+│   │   ├── index.ts
+│   │   ├── scroll.ts
+│   ├── App.tsx
+│   ├── assets/
+│   │   ├── react.svg
+│   ├── components/
+│   │   ├── global/
+│   │   ├── svg/
+│   │   ├── typography/
+│   │   ├── ui/
+│   ├── config/
+│   │   ├── index.ts
+│   │   ├── seo.ts
+│   ├── data/
+│   │   ├── faqs.ts
+│   │   ├── index.ts
+│   ├── index.css
+│   ├── layouts/
+│   │   ├── index.ts
+│   │   ├── root/
+│   ├── main.tsx
+│   ├── pages/
+│   │   ├── home.tsx
+│   │   ├── not-found.tsx
+│   ├── styles/
+│   │   ├── utils.css
+│   │   ├── overrides.css
+│   ├── utils/
+│   │   ├── cn.ts
+│   │   ├── formatting.ts
+│   │   ├── index.ts
+│   ├── vite-env.d.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── tsconfig.paths.json
+├── types.d.ts
+├── vercel.json
+├── vite.config.ts
+```
+
+## Scripts
+
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project for production.
+- `npm run lint`: Run ESLint to lint the code.
+- `npm run preview`: Preview the production build.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## Contact
+
+- Twitter - [@YourmixJNR](https://twitter.com/yourmixjnr)
+- Email - [radmakson@gmail.com](mailto:radmakson@gmail.com)
