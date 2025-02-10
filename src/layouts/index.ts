@@ -1,1 +1,1 @@
-export { default as RootLayout } from "./root/index";
+export { default as RootLayout } from "./root";

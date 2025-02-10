@@ -2,8 +2,11 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { useEffect } from "react";
 import { Home, NotFound } from "./pages";
 import { RootLayout } from "./layouts";
-
 import { Scroll } from "./animation";
+
+// import global styles
+import "./styles/overrides.css";
+import "./styles/utils.css";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +26,7 @@ const router = createBrowserRouter([
     ],
   },
 
-  // We can create another route object here if we don't want the <RootLayout /> to affect it
+  // we can create another route object here if we don't want the <RootLayout /> to affect it
 ]);
 
 export default function App() {
